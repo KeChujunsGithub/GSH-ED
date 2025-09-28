@@ -1,0 +1,200 @@
+\section{习题1}
+
+
+\newpage
+\subsection{1.1}
+根据算符 $\nabla$ 的微分性与矢量性，推导下列公式：
+
+$$\nabla (\boldsymbol{A} \cdot \boldsymbol{B}) = \boldsymbol{B} \times (\nabla \times \boldsymbol{A}) + (\boldsymbol{B} \cdot \nabla)\boldsymbol{A} + \boldsymbol{A} \times (\nabla \times \boldsymbol{B}) + (\boldsymbol{A} \cdot \nabla)\boldsymbol{B}$$
+
+$$\boldsymbol{A} \times (\nabla \times \boldsymbol{A}) = \frac{1}{2} \nabla A^2 - (\boldsymbol{A} \cdot \nabla)\boldsymbol{A}$$
+
+\newpage
+\subsection{1.2}
+设 $u$ 是空间坐标 $x, y, z$ 的函数，证明：
+
+$$\nabla f(u) = \frac{df}{du} \nabla u$$
+
+$$\nabla \cdot \boldsymbol{A}(u) = \nabla u \cdot \frac{d\boldsymbol{A}}{du}$$
+
+$$\nabla \times \boldsymbol{A}(u) = \nabla u \times \frac{d\boldsymbol{A}}{du}$$
+
+\newpage
+\subsection{1.3}
+从源点（即电荷电流分布点）到场点 $\boldsymbol{x}$ 的距离 $r$，以及矢径 $\boldsymbol{r}$ 分别为
+
+$$r = \sqrt{(x - x')^2 + (y - y')^2 + (z - z')^2}$$
+
+$$\boldsymbol{r} = (x - x') \boldsymbol{e}_x + (y - y') \boldsymbol{e}_y + (z - z') \boldsymbol{e}_z$$
+
+对源变数 $\boldsymbol{x}'$ 和场变数 $\boldsymbol{x}$ 求微商的算符分别为
+
+$$\nabla' = \boldsymbol{e}_x \frac{\partial}{\partial x'} + \boldsymbol{e}_y \frac{\partial}{\partial y'} + \boldsymbol{e}_z \frac{\partial}{\partial z'}, \quad \nabla = \boldsymbol{e}_x \frac{\partial}{\partial x} + \boldsymbol{e}_y \frac{\partial}{\partial y} + \boldsymbol{e}_z \frac{\partial}{\partial z}$$
+
+(1) 证明下列结果，并体会算符 $\nabla'$ 与 $\nabla$ 的关系：
+
+$$\nabla r = -\nabla' r = \frac{\boldsymbol{r}}{r} \quad (\text{单位矢量})$$
+
+$$\nabla \cdot \boldsymbol{r} = -\nabla' \cdot \boldsymbol{r} = 3$$
+
+$$\nabla \times \boldsymbol{r} = -\nabla' \times \boldsymbol{r} = \boldsymbol{0}$$
+
+$$\nabla \boldsymbol{r} = -\nabla' \boldsymbol{r} = \frac{\boldsymbol{I}}{r} \quad (\text{单位张量})$$
+
+$$\nabla \frac{1}{r} = -\nabla' \frac{1}{r} = -\frac{\boldsymbol{r}}{r^3}$$
+
+$$\nabla \cdot \frac{\boldsymbol{r}}{r^3} = -\nabla' \cdot \frac{\boldsymbol{r}}{r^3} = 0, \quad (r \neq 0)$$
+
+$$\nabla \times \frac{\boldsymbol{r}}{r^3} = -\nabla' \times \frac{\boldsymbol{r}}{r^3} = \boldsymbol{0}$$
+
+(2) 求 $(\boldsymbol{a} \cdot \nabla)\boldsymbol{r}$, $\nabla(\boldsymbol{a} \cdot \boldsymbol{r})$, $\nabla \cdot [\boldsymbol{E}_0 \sin(\boldsymbol{k} \cdot \boldsymbol{r})]$, $\nabla \times [\boldsymbol{E}_0 \sin(\boldsymbol{k} \cdot \boldsymbol{r})]$，其中 $\boldsymbol{a}, \boldsymbol{k}$ 和 $\boldsymbol{E}_0$ 均为常矢量。
+
+\newpage
+\subsection{1.4}
+应用高斯定理证明
+
+$$\int_V dV \nabla \times \boldsymbol{f} = \oint_S d\boldsymbol{S} \times \boldsymbol{f}$$
+
+应用斯托克斯定理证明
+
+$$\int_S d\boldsymbol{S} \times \nabla \varphi = \oint_L \varphi d\boldsymbol{l}$$
+
+\newpage
+\subsection{1.5}
+已知一个电荷系统的电偶极矩定义为 $\boldsymbol{p}(t) = \int_V \rho(\boldsymbol{x}', t) \boldsymbol{x}' dV'$，利用电荷守恒定律
+
+$$\nabla' \cdot \boldsymbol{J} + \frac{\partial \rho}{\partial t} = 0$$
+
+证明 $\boldsymbol{p}$ 的时变率为
+
+$$\frac{d\boldsymbol{p}}{dt} = \int_V \boldsymbol{J}(\boldsymbol{x}', t) dV'$$
+
+\newpage
+\subsection{1.6}
+若 $\boldsymbol{m}$ 是常矢量，证明除 $\boldsymbol{R} = \boldsymbol{0}$ 以外，矢量 $\boldsymbol{A} = \boldsymbol{m} \times \boldsymbol{R}/R^3$ 的旋度等于标量 $\varphi = \boldsymbol{m} \cdot \boldsymbol{R}/R^3$ 的梯度的负值，即 $\nabla \times \boldsymbol{A} = -\nabla \varphi$。
+
+\newpage
+\subsection{1.7}
+证明两个闭合的恒定电流圈之间的相互作用力大小相等，方向相反。但两个电流元之间的相互作用力一般并不服从牛顿第三定律。
+
+\newpage
+\subsection{1.8}
+证明均匀介质内部的极化电荷体密度 $\rho_p$ 总是等于自由电荷体密度 $\rho_f$ 的 $-(1 - \varepsilon_0 / \varepsilon)$ 倍。
+
+\newpage
+\subsection{1.9}
+有一内外半径分别为 $r_1$ 和 $r_2$ 的空心介质球，介质的电容率为 $\varepsilon$，使介质内均匀地带静止的自由电荷密度 $\rho_f$。求
+
+(1) 空间各点的电场；
+
+(2) 极化电荷体密度和极化电荷面密度。
+
+\newpage
+\subsection{1.10}
+内外半径分别为 $r_1$ 和 $r_2$ 的无穷长中空导体圆柱，沿轴向流有恒定均匀的自由电流密度 $\boldsymbol{J}_f$，导体的磁导率为 $\mu$，求磁感应强度和磁化电流。
+
+\newpage
+\subsection{1.11}
+平行板电容器内有两层介质，它们的厚度分别为 $l_1$ 和 $l_2$，电容率为 $\varepsilon_1$ 和 $\varepsilon_2$，今在两极板上接上电动势为 $\mathcal{E}$ 的电池，求
+
+(1) 电容器两极板上的自由电荷面密度 $\omega_f$；
+
+(2) 介质分界面上的自由电荷面密度 $\omega_f$；
+
+(3) 若介质是漏电的，电导率分别为 $\sigma_1$ 和 $\sigma_2$，当电流达到稳定时，上述结果如何？
+
+\newpage
+\subsection{1.12}
+证明：
+
+(1) 当两种绝缘介质的分界面上不带面自由电荷时，电场线的曲折满足
+
+$$\frac{\tan\theta_2}{\tan\theta_1} = \frac{\varepsilon_2}{\varepsilon_1}$$
+
+其中 $\varepsilon_1$ 和 $\varepsilon_2$ 分别是两种介质的电容率，$\theta_1$ 和 $\theta_2$ 分别是界面两侧电场线与法线的夹角。
+
+(2) 当两种导电介质内流有恒定电流时，分界面上电场线的曲折满足
+
+$$\frac{\tan\theta_2}{\tan\theta_1} = \frac{\sigma_2}{\sigma_1}$$
+
+其中 $\sigma_1$ 和 $\sigma_2$ 分别为两种介质的电导率。
+
+\newpage
+\subsection{1.13}
+试用边值关系证明：在绝缘介质与导体的分界面上，在静电情况下，导体外的电场线总是垂直于导体表面；在恒定电流情况下，导体内的电场线总是平行于导体表面。
+
+\newpage
+\subsection{1.14}
+内外电极的截面半径分别为 $a$ 和 $b$ 的无限长圆柱型电容器，单位长度荷电为 $\lambda_f$，两极间填充电导率为 $\sigma$ 的非磁性物质。
+
+(1) 证明在介质中任何一点传导电流与位移电流严格抵消，因此内部无磁场；
+
+(2) 求 $\lambda_f$ 随时间衰减的规律；
+
+(3) 求与轴相距为 $r$ 的地方的能量耗散功率密度；
+
+(4) 求长度为 $l$ 的一段介质总的能量耗散功率，并证明它等于这段的电场能量减少率。
+
+\newpage
+\subsection{1.15}
+证明：$\nabla \cdot \frac{\boldsymbol{r}}{r^3} = 4\pi \delta(\boldsymbol{x} - \boldsymbol{x}')$。
+
+\newpage
+\subsection{1.16}
+根据库仑定律，求出静电场的两个微分方程。
+
+\newpage
+\subsection{1.17}
+根据毕奥-萨伐尔定律，求出稳恒磁场的两个微分方程。
+
+\newpage
+\subsection{1.18}
+平行板电容器由两块很薄的圆形极板组成，两极板之间通过与对称轴重合的导线供以电流 $I = I_0 \cos \omega t$，极板半径为 $a$，相互距离为 $d$，假定 $d \ll a \ll c/\omega$（$c$ 是光速）。求：
+
+(1) 电容器内部和外部的电磁场；
+
+(2) 极板上的面电流分布。
+
+\newpage
+\subsection{1.19}
+电荷为 $e$ 的粒子以初速度 $\boldsymbol{v}_0$ 进入互相垂直的均匀电磁场，设 $\boldsymbol{v}_0$ 与电场和磁场都垂直，求粒子的非相对论运动轨迹（略去粒子加速运动产生的辐射）。
+
+\newpage
+\subsection{1.20}
+证明麦克斯韦方程组的完备性。即对于任何区域 $V$，只要给定：
+
+(1) $V$ 内电荷电流分布；
+
+(2) 初始条件，即 $t = 0$ 时 $V$ 内所有点的 $\boldsymbol{E}(\boldsymbol{x}, 0)$ 和 $\boldsymbol{B}(\boldsymbol{x}, 0)$ 值；
+
+(3) 边界条件，即任意时刻 $V$ 的边界面上的 $\boldsymbol{E}_S$ 和 $\boldsymbol{B}_S$ 值。
+
+则 $V$ 内麦克斯韦方程组的解完全确定。
+
+\newpage
+\subsection{1.21}
+求稳恒条件下，线性均匀介质内磁化电流密度 $\boldsymbol{J}_M$ 与传导电流密度 $\boldsymbol{J}_f$ 的关系。
+
+\newpage
+\subsection{1.22}
+求线性均匀导体内自由电荷密度随时间变化的规律。
+
+\newpage
+\subsection{1.23}
+证明：静电场中导体表面受到的应力总是法向张力，作用于单位面积上的力等于电场能量密度。
+
+\newpage
+\subsection{1.24}
+当两种介质分界面没有传导电流时，
+
+(1) 求界面 $\boldsymbol{B}$ 线曲折的表达式；
+
+(2) 证明高 $\mu$ 值磁性体内表面的 $\boldsymbol{B}$ 线几乎与其表面平行，表面受到的磁应力是压力。
+
+\newpage
+\subsection{1.25}
+证明导线中电流热效应损耗的能量，等于其表面流进的电磁能量。
+
+\newpage
+\subsection{1.26}
+若自由磁荷（磁极）存在，试猜想应当怎样改变受力方程组？
